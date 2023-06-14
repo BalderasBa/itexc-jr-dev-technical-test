@@ -1,0 +1,61 @@
+@use "../global/" as *;
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: $clr_bg_white;
+  .header-top {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    h1 {
+      font-family: $font_poppins;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 57.6px;
+      color: $clr_txt_p;
+      span {
+        color: #0b65a7;
+      }
+    }
+    p {
+      font-family: $font_poppins;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: $clr_txt_s;
+      margin-bottom: 40px;
+    }
+  }
+  .header-table {
+    display: flex;
+    margin: 140px 115px 0;
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $clr_blue_dark;
+      border-bottom: 5px solid transparent;
+      transition: 300ms ease-in;
+      text-align: center;
+      padding: 34px 48px;
+
+      &:hover {
+        background-color: $clr_blue_light;
+        color: $clr_txt_s;
+        border-bottom: 5px solid $clr_orange;
+      }
+      flex: 1;
+      svg {
+        margin-bottom: 13.5px;
+      }
+      p {
+        font-family: $font_poppins;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+        color: $clr_bg_white;
+      }
+    }
+  }
+}

@@ -4,6 +4,8 @@
 
 ## -> So I'll code it
 
--For scss codes I'll used VS code extention compiler to compile it to css.
+-SCSS: code I'll used VS code extention compiler to compile it to css.
 
--I Used BrowserRouter in App.js to let me use "Link to" or "NavLink to" instide of "a href" tag.
+-I Used BrowserRouter from react-router-dom in App.js to let me use "Link to" or "NavLink to" instide of "a href" tag.
+
+-icons: I used the delivred icons in figma file

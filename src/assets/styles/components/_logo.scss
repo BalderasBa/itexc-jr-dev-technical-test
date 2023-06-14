@@ -3,11 +3,10 @@
 .logo {
   position: relative;
   font-family: $font_poppins;
-  color: $clr_blue_dark;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  vertical-align: Center;
+  color: $clr_blue_dark;
   svg,
   .plus-icon {
     position: absolute;

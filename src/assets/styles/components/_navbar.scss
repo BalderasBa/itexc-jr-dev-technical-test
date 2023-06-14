@@ -11,10 +11,10 @@
     column-gap: 35px;
     a {
       font-family: $font_poppins;
-      color: $clr_txt_p;
       font-weight: 400;
       font-size: 14px;
       line-height: 21px;
+      color: $clr_txt_p;
     }
   }
   .nav-contact {
@@ -32,17 +32,17 @@
       flex-direction: column;
       span {
         font-family: $font_inter;
-        color: $clr_grey;
         font-style: medium;
         font-size: 10px;
         line-height: 150%;
+        color: $clr_grey;
       }
       p {
         font-family: $font_inter;
-        color: $clr_txt_p;
         font-style: medium;
         font-size: 10px;
         line-height: 150%;
+        color: $clr_txt_p;
       }
     }
   }
