@@ -1,0 +1,49 @@
+@use "../global/" as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $clr_bg_white;
+  height: 71.5px;
+  .nav-menu {
+    display: flex;
+    column-gap: 35px;
+    a {
+      font-family: $font_poppins;
+      color: $clr_txt_p;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  .nav-contact {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    svg {
+      color: $clr_blue_light;
+      background-color: transparent;
+      width: 24px;
+      height: 24px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      span {
+        font-family: $font_inter;
+        color: $clr_grey;
+        font-style: medium;
+        font-size: 10px;
+        line-height: 150%;
+      }
+      p {
+        font-family: $font_inter;
+        color: $clr_txt_p;
+        font-style: medium;
+        font-size: 10px;
+        line-height: 150%;
+      }
+    }
+  }
+}

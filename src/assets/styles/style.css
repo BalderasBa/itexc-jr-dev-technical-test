@@ -1,1 +1,117 @@
-/*# sourceMappingURL=style.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+dl,
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  border: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.container {
+  margin: 0 100px;
+}
+
+.logo {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: #005ea3;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  vertical-align: Center;
+}
+.logo svg,
+.logo .plus-icon {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: #f27219;
+  color: #fff;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 71.5px;
+}
+.navbar .nav-menu {
+  display: flex;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+.navbar .nav-menu a {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.navbar .nav-contact {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.navbar .nav-contact svg {
+  color: #3C88C3;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+}
+.navbar .nav-contact div {
+  display: flex;
+  flex-direction: column;
+}
+.navbar .nav-contact div span {
+  font-family: "Inter", sans-serif;
+  color: #c4c4c4;
+  font-style: medium;
+  font-size: 10px;
+  line-height: 150%;
+}
+.navbar .nav-contact div p {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-style: medium;
+  font-size: 10px;
+  line-height: 150%;
+}/*# sourceMappingURL=style.css.map */
