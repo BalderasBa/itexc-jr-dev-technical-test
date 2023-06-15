@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+// Icons:
 import { ReactComponent as HoursSupport } from "../assets/images/hours24-support-icon.svg";
 import { ReactComponent as Medical } from "../assets/images/medical-icon.svg";
 import { ReactComponent as Online } from "../assets/images/online-icon.svg";
@@ -16,9 +17,9 @@ function Header() {
           Healththy 24 Online ranks highest in telehealth satisfaction among
           direct-to-consumer brands.
         </p>
-        <Link className="button_p" to="#">
+        <a className="button_p" href="#">
           Get Started
-        </Link>
+        </a>
       </div>
 
       <div className="header-table">

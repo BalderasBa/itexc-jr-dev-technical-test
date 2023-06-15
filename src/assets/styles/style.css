@@ -43,6 +43,16 @@ select {
 .container {
   margin: 0 100px;
 }
+@media (max-width: 991px) {
+  .container {
+    margin: 0 65px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    margin: 0 35px;
+  }
+}
 
 .section {
   padding-top: 100px;
@@ -56,6 +66,14 @@ select {
   color: #1e1e1e;
 }
 
+.text-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 150%;
+  color: #1e1e1e;
+}
+
 .logo {
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -63,6 +81,7 @@ select {
   font-size: 24px;
   line-height: 150%;
   color: #005ea3;
+  white-space: nowrap;
 }
 .logo svg,
 .logo .plus-icon {
@@ -88,6 +107,7 @@ select {
   display: flex;
   -moz-column-gap: 35px;
        column-gap: 35px;
+  margin: 0 10px;
 }
 .navbar .nav-menu a {
   font-family: "Poppins", sans-serif;
@@ -95,6 +115,7 @@ select {
   font-size: 14px;
   line-height: 150%;
   color: #000;
+  white-space: nowrap;
 }
 .navbar .nav-contact {
   display: flex;
@@ -118,6 +139,7 @@ select {
   font-size: 10px;
   line-height: 150%;
   color: #c4c4c4;
+  white-space: nowrap;
 }
 .navbar .nav-contact div p {
   font-family: "Inter", sans-serif;
@@ -125,6 +147,7 @@ select {
   font-size: 10px;
   line-height: 150%;
   color: #000;
+  white-space: nowrap;
 }
 
 header {
@@ -201,6 +224,7 @@ header .header-table > div p {
   height: -moz-fit-content;
   height: fit-content;
   cursor: pointer;
+  border: 1px solid transparent;
   text-transform: capitalize;
   transition: 300ms ease-in;
 }
@@ -208,6 +232,30 @@ header .header-table > div p {
   background-color: #fff;
   color: #1e1e1e;
   border: 1px solid #1e1e1e;
+}
+
+.button_s {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 12px 24px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #005ea3;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+  text-transform: capitalize;
+  border: 1px solid #005ea3;
+  transition: 300ms ease-in;
+}
+.button_s:hover {
+  background-color: #fff;
+  color: #1e1e1e;
 }
 
 .about-us {
@@ -286,6 +334,61 @@ header .header-table > div p {
   row-gap: 10px;
 }
 
+.our-services {
+  padding: 100px;
+  padding-left: 200px;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 130px;
+       column-gap: 130px;
+  background-color: #F4F7FA;
+}
+.our-services .services-header {
+  text-align: center;
+}
+.our-services .services-header h1 {
+  margin-bottom: 1rem;
+}
+.our-services .services-header p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 150%;
+  color: #1e1e1e;
+}
+.our-services .services-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.our-services .services-content .service {
+  background-color: #fff;
+}
+.our-services .services-content .service .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our-services .services-content .service .head h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 150%;
+  color: #1e1e1e;
+}
+.our-services .services-content .service .head svg {
+  color: #f27219;
+}
+.our-services .services-content .service ul {
+  list-style: circle;
+}
+.our-services .services-content .service ul li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 150%;
+  color: #1e1e1e;
+}
+
 .get-app {
   display: flex;
   padding: 50px 200px;
@@ -323,4 +426,46 @@ header .header-table > div p {
 }
 .get-app .apps span {
   float: right;
+}
+
+.find-doc {
+  padding: 100px;
+  padding-left: 200px;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 130px;
+       column-gap: 130px;
+}
+.find-doc img {
+  width: 45%;
+}
+.find-doc div h1 {
+  margin-bottom: 1rem;
+}
+.find-doc div p {
+  margin-bottom: 2rem;
+}
+
+.search {
+  display: flex;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  background-color: #fff;
+  align-items: center;
+}
+.search img {
+  width: 40%;
+}
+.search > div {
+  width: 40%;
+}
+.search > div h1 {
+  font-size: 2rem;
+  color: #005ea3;
+}
+.search > div p {
+  margin-bottom: 44px;
+}
+.search > div .button_p {
+  padding: 12px 48px;
 }/*# sourceMappingURL=style.css.map */

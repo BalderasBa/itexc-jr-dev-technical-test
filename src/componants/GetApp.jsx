@@ -1,8 +1,9 @@
 import React from "react";
-import { ReactComponent as Star } from "../assets/images/star.svg";
 
+// images:
 import google from "../assets/images/google-play-logo.png";
 import apple from "../assets/images/app-store-logo.png";
+import { ReactComponent as Star } from "../assets/images/star.svg";
 
 function GetApp() {
   return (

@@ -50,8 +50,8 @@ function AboutUs() {
           this week.
         </p>
         <ul>
-          {infos.map((info) => (
-            <li key={info} className="text-normal">
+          {infos.map((info,i) => (
+            <li key={i} className="text-normal">
               <Check /> {info}
             </li>
           ))}

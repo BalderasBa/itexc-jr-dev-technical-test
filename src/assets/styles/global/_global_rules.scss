@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./breakpoints" as *;
 
 *,
 *::before,
@@ -40,6 +41,12 @@ select {
 
 .container {
   margin: 0 100px;
+  @include breakpoint-down(medium) {
+    margin: 0 65px;
+  }
+  @include breakpoint-down(small) {
+    margin: 0 35px;
+  }
 }
 
 .section {
@@ -50,6 +57,13 @@ select {
   font-family: $font_poppins;
   font-weight: 400;
   font-size: 1rem;
+  line-height: 150%;
+  color: $clr_txt_s;
+}
+.text-header {
+  font-family: $font_poppins;
+  font-weight: 500;
+  font-size: 2.5rem;
   line-height: 150%;
   color: $clr_txt_s;
 }

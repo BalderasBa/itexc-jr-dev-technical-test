@@ -1,0 +1,19 @@
+@use "../global/" as *;
+.find-doc {
+  padding: 100px;
+  padding-left: 200px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 130px;
+  img {
+    width: 45%;
+  }
+  div {
+    h1{
+        margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}

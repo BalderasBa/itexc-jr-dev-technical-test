@@ -9,12 +9,14 @@
   .nav-menu {
     display: flex;
     column-gap: 35px;
+    margin: 0 10px;
     a {
       font-family: $font_poppins;
       font-weight: 400;
       font-size: 14px;
       line-height: 150%;
       color: $clr_txt_p;
+      white-space: nowrap;
     }
   }
   .nav-contact {
@@ -36,6 +38,7 @@
         font-size: 10px;
         line-height: 150%;
         color: $clr_grey;
+        white-space: nowrap;
       }
       p {
         font-family: $font_inter;
@@ -43,6 +46,7 @@
         font-size: 10px;
         line-height: 150%;
         color: $clr_txt_p;
+        white-space: nowrap;
       }
     }
   }

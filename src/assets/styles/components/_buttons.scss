@@ -1,7 +1,5 @@
 @use "../global/" as *;
 
-// delete me from here to end
-
 .button_p {
   text-decoration: none;
   background-color: $clr_orange;
@@ -15,11 +13,34 @@
   width: fit-content;
   height: fit-content;
   cursor: pointer;
+  border: 1px solid transparent;
   text-transform: capitalize;
   transition: 300ms ease-in;
   &:hover {
     background-color: $clr_bg_white;
     color: $clr_txt_s;
     border: 1px solid $clr_txt_s;
+  }
+}
+
+.button_s {
+  text-decoration: none;
+  background-color: $clr_bg_white;
+  padding: 12px 24px;
+  text-align: center;
+  font-family: $font_inter;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: $clr_blue_dark;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  text-transform: capitalize;
+  border: 1px solid $clr_blue_dark;
+  transition: 300ms ease-in;
+  &:hover {
+    background-color: $clr_bg_white;
+    color: $clr_txt_s;
   }
 }

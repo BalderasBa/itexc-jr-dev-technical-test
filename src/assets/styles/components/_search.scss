@@ -1,0 +1,23 @@
+@use "../global/" as *;
+.search {
+  display: flex;
+  column-gap: 100px;
+  background-color: $clr_bg_white;
+  align-items: center;
+  img {
+    width: 40%;
+  }
+  > div {
+    width: 40%;
+    h1 {
+      font-size: 2rem;
+      color: $clr_blue_dark;
+    }
+    p {
+      margin-bottom: 44px;
+    }
+    .button_p {
+      padding: 12px 48px;
+    }
+  }
+}

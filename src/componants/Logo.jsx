@@ -1,4 +1,6 @@
 import React from "react";
+
+// Icons:
 import { ReactComponent as Plus } from "../assets/images/plus-icon.svg";
 
 function Logo() {

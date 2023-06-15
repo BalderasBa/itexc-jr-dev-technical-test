@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
-import { Link } from "react-router-dom";
 
+// Icons:
 import { ReactComponent as Calling } from "../assets/images/calling-icon.svg";
 
 function NavBar() {
@@ -9,10 +9,10 @@ function NavBar() {
     <nav className="navbar container">
       <Logo />
       <div className="nav-menu">
-        <Link to="#">Home</Link>
-        <Link to="#about-us">About us</Link>
-        <Link to="#our-services">Our services</Link>
-        <Link to="#contact-us">Contact us</Link>
+        <a href="#">Home</a>
+        <a href="#about-us">About us</a>
+        <a href="#our-services">Our services</a>
+        <a href="#contact-us">Contact us</a>
       </div>
       <div className="nav-contact">
         <Calling />

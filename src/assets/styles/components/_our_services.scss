@@ -1,0 +1,54 @@
+@use "../global/" as *;
+.our-services {
+  padding: 100px;
+  padding-left: 200px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 130px;
+  background-color: $clr_bg_grey_dark;
+  .services-header {
+    text-align: center;
+    h1 {
+      margin-bottom: 1rem;
+    }
+    p {
+      font-family: $font_roboto;
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 150%;
+      color: $clr_txt_s;
+    }
+  }
+  .services-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .service {
+      background-color: $clr_bg_white;
+      .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+          font-family: $font_poppins;
+          font-weight: 500;
+          font-size: 1.25rem;
+          line-height: 150%;
+          color: $clr_txt_s;
+        }
+        svg {
+          color: $clr_orange;
+        }
+      }
+      ul {
+        list-style: circle;
+        li {
+          font-family: $font_poppins;
+          font-weight: 400;
+          font-size: 1.125rem;
+          line-height: 150%;
+          color: $clr_txt_s;
+        }
+      }
+    }
+  }
+}
