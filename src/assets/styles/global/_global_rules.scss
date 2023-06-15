@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 *,
 *::before,
 *::after {
@@ -39,6 +41,15 @@ select {
 .container {
   margin: 0 100px;
 }
+
 .section {
   padding-top: 100px;
+}
+
+.text-normal {
+  font-family: $font_poppins;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: $clr_txt_s;
 }

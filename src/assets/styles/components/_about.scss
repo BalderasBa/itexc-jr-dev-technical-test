@@ -1,0 +1,78 @@
+@use "../global/" as *;
+
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 100px;
+  padding-bottom: 100px;
+  .about-left {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .about-btn {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    h1 {
+      font-family: $font_poppins;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 150%;
+      color: $clr_txt_s;
+    }
+    p {
+      font-family: $font_poppins;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 150%;
+      color: $clr_txt_s;
+      &:first-of-type {
+        margin-bottom: 1rem;
+      }
+    }
+    p:first-of-type{
+      background-color: red;
+    }
+
+    .logo {
+      color: $clr_bg_white;
+      background: $linear_gradient;
+      padding: 18px;
+      svg,
+      .plus-icon {
+        position: absolute;
+        top: 12px;
+        right: 8px;
+        background-color: $clr_orange;
+        color: $clr_bg_white;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        padding: 0.25rem;
+      }
+    }
+  }
+  .about-right {
+    grid-area: 2 / 2 / span 2 / 3;
+    h1 {
+      font-family: $font_poppins;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 150%;
+      color: $clr_txt_s;
+    }
+    p {
+      font-family: $font_poppins;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 150%;
+      color: $clr_txt_s;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+}

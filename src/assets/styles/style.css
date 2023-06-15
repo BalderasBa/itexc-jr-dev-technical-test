@@ -48,12 +48,20 @@ select {
   padding-top: 100px;
 }
 
+.text-normal {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #1e1e1e;
+}
+
 .logo {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 150%;
   color: #005ea3;
 }
 .logo svg,
@@ -85,7 +93,7 @@ select {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 150%;
   color: #000;
 }
 .navbar .nav-contact {
@@ -95,7 +103,7 @@ select {
        column-gap: 12px;
 }
 .navbar .nav-contact svg {
-  color: #3C88C3;
+  color: #3c88c3;
   background-color: transparent;
   width: 24px;
   height: 24px;
@@ -143,9 +151,9 @@ header .header-top p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 150%;
   color: #1e1e1e;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 header .header-table {
   display: flex;
@@ -163,7 +171,7 @@ header .header-table > div {
   flex: 1;
 }
 header .header-table > div:hover {
-  background-color: #3C88C3;
+  background-color: #3c88c3;
   color: #1e1e1e;
   border-bottom: 5px solid #f27219;
 }
@@ -174,7 +182,7 @@ header .header-table > div p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 17px;
-  line-height: 21px;
+  line-height: 150%;
   color: #fff;
 }
 
@@ -186,7 +194,7 @@ header .header-table > div p {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  line-height: 24px;
+  line-height: 150%;
   color: #fff;
   width: -moz-fit-content;
   width: fit-content;
@@ -200,4 +208,119 @@ header .header-table > div p {
   background-color: #fff;
   color: #1e1e1e;
   border: 1px solid #1e1e1e;
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 100px;
+  padding-bottom: 100px;
+}
+.about-us .about-left {
+  grid-area: 1/1/2/2;
+}
+.about-us .about-btn {
+  grid-area: 1/2/2/3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.about-us .about-btn h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 150%;
+  color: #1e1e1e;
+}
+.about-us .about-btn p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #1e1e1e;
+}
+.about-us .about-btn p:first-of-type {
+  margin-bottom: 1rem;
+}
+.about-us .about-btn p:first-of-type {
+  background-color: red;
+}
+.about-us .about-btn .logo {
+  color: #fff;
+  background: linear-gradient(135deg, rgb(22, 120, 242) 0%, rgb(101, 168, 251) 100%);
+  padding: 18px;
+}
+.about-us .about-btn .logo svg,
+.about-us .about-btn .logo .plus-icon {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  background-color: #f27219;
+  color: #fff;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+.about-us .about-right {
+  grid-area: 2/2/span 2/3;
+}
+.about-us .about-right h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 150%;
+  color: #1e1e1e;
+}
+.about-us .about-right p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #1e1e1e;
+}
+.about-us .about-right ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.get-app {
+  display: flex;
+  padding: 50px 200px;
+  background-color: #005ea3;
+}
+.get-app h1 {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 150%;
+  color: #fff;
+}
+.get-app p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #fff;
+}
+.get-app span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #fff;
+}
+.get-app .apps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 13px;
+}
+.get-app .apps .stars {
+  margin-left: 1rem;
+}
+.get-app .apps span {
+  float: right;
 }/*# sourceMappingURL=style.css.map */

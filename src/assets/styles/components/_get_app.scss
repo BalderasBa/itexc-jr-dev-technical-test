@@ -1,0 +1,41 @@
+@use "../global/" as *;
+.get-app {
+  display: flex;
+  padding: 50px 200px;
+  background-color: $clr_blue_dark;
+  h1 {
+    font-family: $font_sora;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 150%;
+    color: $clr_bg_white;
+  }
+  p {
+    font-family: $font_poppins;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: $clr_bg_white;
+  }
+  span {
+    font-family: $font_poppins;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: $clr_bg_white;
+  }
+  .apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 13px;
+    .stars {
+      //   display: flex;
+      //   justify-content: space-between;
+      margin-left: 1rem;
+    }
+    span {
+      float: right;
+    }
+  }
+}

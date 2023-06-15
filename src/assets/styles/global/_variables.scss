@@ -1,9 +1,7 @@
 // Sass Variables
+// colors
 $clr_blue_dark: #005ea3;
-$clr_blue_light: #3C88C3;
-$clr_blue_gradian_dark: #1678f2;
-$clr_blue_gradian_light: #65a8fb;
-
+$clr_blue_light: #3c88c3;
 $clr_orange: #f27219;
 $clr_txt_p: #000;
 $clr_txt_s: #1e1e1e;
@@ -12,6 +10,13 @@ $clr_grey: #c4c4c4;
 $clr_bg_grey: #ebebeb;
 $clr_bg_white: #fff;
 
+$linear_gradient: linear-gradient(
+  135deg,
+  rgba(22, 120, 242, 1) 0%,
+  rgba(101, 168, 251, 1) 100%
+);
+
+// font families
 $font_poppins: "Poppins", sans-serif;
 $font_inter: "Inter", sans-serif;
 $font_roboto: "Roboto", sans-serif;

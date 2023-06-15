@@ -22,9 +22,9 @@ header {
       font-family: $font_poppins;
       font-weight: 400;
       font-size: 18px;
-      line-height: 27px;
+      line-height: 150%;
       color: $clr_txt_s;
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
     }
   }
   .header-table {
@@ -53,7 +53,7 @@ header {
         font-family: $font_poppins;
         font-weight: 500;
         font-size: 17px;
-        line-height: 21px;
+        line-height: 150%;
         color: $clr_bg_white;
       }
     }
