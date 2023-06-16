@@ -13,7 +13,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "montserrat", sans-serif;
+  position: relative;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -28,7 +28,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
 input,
 textarea,
 select {
@@ -38,7 +37,12 @@ select {
 .clearfix {
   clear: both;
 }
-
+p,
+span {
+  @include breakpoint-down(small) {
+    font-size: 14px !important;
+  }
+}
 .container {
   margin: 0 100px;
   @include breakpoint-down(medium) {
@@ -51,6 +55,12 @@ select {
 
 .section {
   padding-top: 100px;
+  @include breakpoint-down(medium) {
+    padding-top: 80px;
+  }
+  @include breakpoint-down(small) {
+    padding-top: 65px;
+  }
 }
 
 .text-normal {
@@ -60,6 +70,9 @@ select {
   font-size: 1rem;
   line-height: 150%;
   color: $clr_txt_s;
+  @include breakpoint-down(small) {
+    font-size: 14px;
+  }
 }
 .text-header {
   font-family: $font_poppins;
@@ -68,12 +81,30 @@ select {
   font-size: 2.5rem;
   line-height: 150%;
   color: $clr_txt_p;
+  @include breakpoint-down(medium) {
+    font-size: 2rem;
+  }
+  @include breakpoint-down(small) {
+    font-size: 1.3rem;
+  }
 }
 .emty-area-white {
   height: 423px;
   background-color: $clr_bg_white;
+  @include breakpoint-down(medium) {
+    height: 250px;
+  }
+  @include breakpoint-down(small) {
+    height: 120px;
+  }
 }
 .emty-area-gray {
   height: 200px;
   background-color: $clr_bg_grey;
+  @include breakpoint-down(medium) {
+    height: 110px;
+  }
+  @include breakpoint-down(small) {
+    height: 70px;
+  }
 }

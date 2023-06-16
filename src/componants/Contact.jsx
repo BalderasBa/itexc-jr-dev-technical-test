@@ -5,7 +5,11 @@ import { ReactComponent as Adress } from "../assets/images/location-icon.svg";
 import { ReactComponent as Phone } from "../assets/images/phone-icon.svg";
 
 function Contact() {
-  const [formContent, setFormContent] = useState({});
+  const [formContent, setFormContent] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   function validateEmail(input) {
     var validRegex =
@@ -18,6 +22,10 @@ function Contact() {
       return false;
     }
   }
+
+  const handleChange = (e) => {
+    setFormContent({ ...formContent, [e.target.name]: e.target.value });
+  };
   function handleSubmit(e) {
     e.preventDefault();
     // some validations:
@@ -25,7 +33,9 @@ function Contact() {
       alert("Email and message are required");
       return;
     }
-    validateEmail(formContent.email);
+    if (validateEmail(formContent.email)) {
+      return;
+    }
 
     fetch("link_here", { method: "POST" })
       .then((response) => response.json())
@@ -50,6 +60,7 @@ function Contact() {
             id="name"
             name="name"
             placeholder="Your Name"
+            onChange={(e) => handleChange(e)}
           />
           <label htmlFor="email" className="label">
             Email
@@ -60,6 +71,7 @@ function Contact() {
             id="email"
             name="email"
             placeholder="Your Email"
+            onChange={(e) => handleChange(e)}
           />
           <label htmlFor="message" className="label">
             Message
@@ -69,6 +81,7 @@ function Contact() {
             name="message"
             id="message"
             placeholder="Your Message"
+            onChange={(e) => handleChange(e)}
           ></textarea>
           <input type="submit" value="Send Message" className="button_p" />
         </form>

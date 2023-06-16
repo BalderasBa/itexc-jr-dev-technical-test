@@ -8,6 +8,13 @@
   line-height: 150%;
   color: $clr_blue_dark;
   white-space: nowrap;
+
+  @include breakpoint-down(medium) {
+    font-size: 18px;
+  }
+  @include breakpoint-down(small) {
+    font-size: 14px;
+  }
   svg,
   .plus-icon {
     position: absolute;

@@ -14,6 +14,12 @@
     width: 40%;
     margin: 0 auto;
     margin-bottom: 22px;
+    @include breakpoint-down(medium) {
+      width: 60%;
+    }
+    @include breakpoint-down(small) {
+      width: 80%;
+    }
   }
   p {
     font-family: $font_roboto;

@@ -28,7 +28,7 @@ function Footer() {
         </div>
       </div>
       <div className="copyright">
-        <p>Healthy 2023 ©</p>
+        <p>Healthy 2023 &copy;</p>
       </div>
     </section>
   );

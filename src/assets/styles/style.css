@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "montserrat", sans-serif;
+  position: relative;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -40,6 +40,13 @@ select {
   clear: both;
 }
 
+@media (max-width: 767px) {
+  p,
+  span {
+    font-size: 14px !important;
+  }
+}
+
 .container {
   margin: 0 100px;
 }
@@ -57,6 +64,16 @@ select {
 .section {
   padding-top: 100px;
 }
+@media (max-width: 991px) {
+  .section {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .section {
+    padding-top: 65px;
+  }
+}
 
 .text-normal {
   font-family: "Poppins", sans-serif;
@@ -65,6 +82,11 @@ select {
   font-size: 1rem;
   line-height: 150%;
   color: #1e1e1e;
+}
+@media (max-width: 767px) {
+  .text-normal {
+    font-size: 14px;
+  }
 }
 
 .text-header {
@@ -75,15 +97,45 @@ select {
   line-height: 150%;
   color: #000;
 }
+@media (max-width: 991px) {
+  .text-header {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .text-header {
+    font-size: 1.3rem;
+  }
+}
 
 .emty-area-white {
   height: 423px;
   background-color: #fff;
 }
+@media (max-width: 991px) {
+  .emty-area-white {
+    height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .emty-area-white {
+    height: 120px;
+  }
+}
 
 .emty-area-gray {
   height: 200px;
   background-color: #ebebeb;
+}
+@media (max-width: 991px) {
+  .emty-area-gray {
+    height: 110px;
+  }
+}
+@media (max-width: 767px) {
+  .emty-area-gray {
+    height: 70px;
+  }
 }
 
 .logo {
@@ -94,6 +146,16 @@ select {
   line-height: 150%;
   color: #005ea3;
   white-space: nowrap;
+}
+@media (max-width: 991px) {
+  .logo {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .logo {
+    font-size: 14px;
+  }
 }
 .logo svg,
 .logo .plus-icon {
@@ -455,14 +517,23 @@ header .header-table > div p {
 }
 
 .our-services {
-  padding: 100px;
-  padding-left: 200px;
+  padding: 100px 100px 100px 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   -moz-column-gap: 130px;
        column-gap: 130px;
   background-color: #F4F7FA;
+}
+@media (max-width: 991px) {
+  .our-services {
+    padding: 80px 80px 80px 100px;
+  }
+}
+@media (max-width: 767px) {
+  .our-services {
+    padding: 65px 65px 65px 100px;
+  }
 }
 .our-services .services-header {
   text-align: center;
@@ -797,14 +868,14 @@ header .header-table > div p {
 .faq .faq-accordion .card .rc-accordion-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 15px;
+  padding: 52px 24px;
 }
 .faq .faq-accordion .card .rc-accordion-body p {
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #727e8c;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
 }
 .faq .faq-accordion .card .rc-collapse {
   position: relative;
@@ -871,6 +942,16 @@ header .header-table > div p {
   width: 40%;
   margin: 0 auto;
   margin-bottom: 22px;
+}
+@media (max-width: 991px) {
+  .stats h1 {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .stats h1 {
+    width: 80%;
+  }
 }
 .stats p {
   font-family: "Roboto", sans-serif;
