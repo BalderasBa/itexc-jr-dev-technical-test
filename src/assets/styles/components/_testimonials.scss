@@ -3,6 +3,12 @@
 .testimonials {
   .testimonials-container {
     padding: 42px;
+    @include breakpoint-down(medium) {
+      padding: 15px;
+    }
+    @include breakpoint-down(medium) {
+      padding: 0;
+    }
     .testimonial-header {
       display: flex;
       flex-direction: column;
@@ -38,6 +44,13 @@
       position: relative;
       width: 100%;
       padding: 0 55px;
+      @include breakpoint-down(medium) {
+        padding: 0 25px;
+      }
+      @include breakpoint-down(medium) {
+        padding: 0;
+      }
+
       svg {
         position: absolute;
         top: 20%;

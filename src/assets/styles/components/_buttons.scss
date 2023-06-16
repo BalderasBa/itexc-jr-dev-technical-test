@@ -48,11 +48,17 @@
 }
 
 .scroll_to_up {
+  &.hiden {
+    display: none;
+  }
   position: sticky;
   bottom: 3rem;
   right: 4.2rem;
   z-index: 1000;
   transition: 300ms;
+  outline: none;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
   svg {
     width: 53px;

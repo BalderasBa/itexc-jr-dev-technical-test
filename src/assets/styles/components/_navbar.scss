@@ -16,7 +16,7 @@
     padding: 0 65px;
   }
   @include breakpoint-down(small) {
-    padding: 0 35px;
+    padding: 0 25px;
   }
   .logo {
     cursor: pointer;
@@ -37,6 +37,12 @@
         color: $clr_txt_p;
         background: $linear_gradient;
       }
+      @include breakpoint-down(medium) {
+        padding: 1rem 7.5px;
+      }
+      @include breakpoint-down(small) {
+        padding: 1rem 5px;
+      }
     }
   }
   .nav-contact {
@@ -52,6 +58,10 @@
     div {
       display: flex;
       flex-direction: column;
+
+      @include breakpoint-down(small) {
+        display: none;
+      }
       span {
         font-family: $font_inter;
         font-style: medium;

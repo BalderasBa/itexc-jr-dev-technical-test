@@ -59,7 +59,7 @@ span {
     padding-top: 80px;
   }
   @include breakpoint-down(small) {
-    padding-top: 65px;
+    padding-top: 40px;
   }
 }
 
@@ -95,7 +95,7 @@ span {
     height: 250px;
   }
   @include breakpoint-down(small) {
-    height: 120px;
+    height: 100px;
   }
 }
 .emty-area-gray {
@@ -105,6 +105,6 @@ span {
     height: 110px;
   }
   @include breakpoint-down(small) {
-    height: 70px;
+    height: 50px;
   }
 }

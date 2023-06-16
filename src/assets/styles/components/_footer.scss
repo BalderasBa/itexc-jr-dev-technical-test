@@ -33,6 +33,10 @@
       display: flex;
       gap: 0.5rem;
     }
+    
+    @include breakpoint-down(medium) {
+      margin-left: 0;
+    }
   }
 
   .copyright {

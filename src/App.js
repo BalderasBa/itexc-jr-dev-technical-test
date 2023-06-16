@@ -15,7 +15,7 @@ import EmtyArea from "./componants/EmtyArea";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <NavBar />
       <Header />
       <AboutUs />

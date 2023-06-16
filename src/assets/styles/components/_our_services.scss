@@ -7,10 +7,12 @@
   column-gap: 130px;
   background-color: $clr_bg_grey_dark;
   @include breakpoint-down(medium) {
-    padding: 80px 80px 80px 100px;
+    padding: 80px ;
+    column-gap: 50px;
   }
   @include breakpoint-down(small) {
-    padding: 65px 65px 65px 100px;
+    padding: 25px;
+    column-gap: 20px;
   }
   .services-header {
     text-align: center;
@@ -36,10 +38,11 @@
   .services-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
     @include breakpoint-down(medium) {
       grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
     }
-    gap: 80px;
     .one-service {
       background-color: $clr_bg_white;
       padding: 1.5rem 2rem;

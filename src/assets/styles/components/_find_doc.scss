@@ -5,6 +5,15 @@
   display: flex;
   justify-content: space-between;
   column-gap: 130px;
+
+  @include breakpoint-down(medium) {
+    column-gap: none;
+    padding: 50px 30px;
+  }
+  @include breakpoint-down(medium) {
+    column-gap: none;
+    padding: 50px 25px;
+  }
   img {
     width: 45%;
     @include breakpoint-down(medium) {
