@@ -2,11 +2,10 @@
 
 -First I create the React app and initial it with my needs. I'll add TypeScript after end creating codes. I was wondering if it was possible to install Bootstrap to create the Accordion, Carousel and Cards ?
 
-## -> So I'll code it
+## -> So I'll code everything without using any librarie because it wasn't mentioned in the test descreption.
 
 -SCSS: code I'll used VS code extention compiler to compile it to css.
-
--icons: I used the delivred icons in figma file
+-icons: I used the delivred icons in figma file.
 
 # 1- I created the skeltton of the page with its styling
 # 2- I make it responsive

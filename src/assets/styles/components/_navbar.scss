@@ -49,6 +49,7 @@
     display: flex;
     align-items: center;
     column-gap: 12px;
+    cursor: pointer;
     svg {
       color: $clr_blue_light;
       background-color: transparent;

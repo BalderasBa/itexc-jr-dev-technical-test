@@ -11,7 +11,7 @@ function Scroll_to_up() {
     const position = window.pageYOffset;
     setSrollPosition(position);
 
-    if (scrollPosition > 500) {
+    if (scrollPosition > 800) {
       return setshowGoTop(true);
     } else {
       return setshowGoTop(false);
