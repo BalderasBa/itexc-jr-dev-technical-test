@@ -1,0 +1,65 @@
+@use "../global/" as *;
+
+.testimonials {
+  .testimonial-header {
+    text-align: center;
+    color: $clr_orange;
+    margin-bottom: 13px;
+    h1 {
+      position: relative;
+      margin: 20px;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        width: 70%;
+        height: 3px;
+        background-color: $clr_orange;
+      }
+    }
+    .stars {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 1rem;
+      svg {
+        color: #fcc74d;
+      }
+    }
+  }
+  .testimonial-comtent {
+    svg {
+      cursor: pointer;
+      padding: 10px;
+      transition: 300ms;
+      border-radius: 50%;
+      &:active,
+      &:focus {
+        background-color: $clr_blue_light;
+      }
+    }
+    > div {
+      text-align: center;
+      .testi-desc {
+        font-family: $font_poppins;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $clr_txt_s;
+      }
+      .testi-author {
+        font-family: $font_poppins;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 150%;
+        color: $clr_txt_s;
+      }
+      .testi-role {
+        font-family: $font_poppins;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 150%;
+        color: $clr_txt_s;
+      }
+    }
+  }
+}

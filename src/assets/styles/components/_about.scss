@@ -8,6 +8,22 @@
   padding-bottom: 100px;
   .about-left {
     grid-area: 1 / 1 / 2 / 2;
+    h1 {
+      font-family: $font_poppins;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 150%;
+      color: $clr_txt_s;
+      margin-bottom: 1.2rem;
+    }
+    p {
+      font-family: $font_poppins;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 150%;
+      color: $clr_txt_s;
+      margin-bottom: 1rem;
+    }
   }
   .about-btn {
     grid-area: 1 / 2 / 2 / 3;
@@ -31,7 +47,7 @@
         margin-bottom: 1rem;
       }
     }
-    p:first-of-type{
+    p:first-of-type {
       background-color: red;
     }
 
@@ -61,6 +77,7 @@
       font-size: 2rem;
       line-height: 150%;
       color: $clr_txt_s;
+      margin-bottom: 1.2rem;
     }
     p {
       font-family: $font_poppins;
@@ -68,11 +85,27 @@
       font-size: 1rem;
       line-height: 150%;
       color: $clr_txt_s;
+      margin-bottom: 1rem;
+      a {
+        color: $clr_txt_s;
+        text-decoration: underline;
+        margin: 0 0.2rem;
+      }
     }
     ul {
       display: flex;
       flex-direction: column;
       row-gap: 10px;
+      li {
+        font-family: $font_poppins;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $clr_txt_s;
+        svg {
+          margin-right: 15px;
+        }
+      }
     }
   }
 }

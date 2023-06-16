@@ -3,6 +3,16 @@
   display: flex;
   padding: 50px 200px;
   background-color: $clr_blue_dark;
+  @include breakpoint-down(medium) {
+    flex-direction: column;
+    padding: 30px 100px;
+    row-gap: 1rem;
+  }
+  @include breakpoint-down(small) {
+    flex-direction: column;
+    padding: 20px 30px;
+    row-gap: 2rem;
+  }
   h1 {
     font-family: $font_sora;
     font-weight: 600;
@@ -29,9 +39,10 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 13px;
+    @include breakpoint-down(medium) {
+      justify-content: center;
+    }
     .stars {
-      //   display: flex;
-      //   justify-content: space-between;
       margin-left: 1rem;
     }
     span {

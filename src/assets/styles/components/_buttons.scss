@@ -44,3 +44,16 @@
     color: $clr_txt_s;
   }
 }
+
+.scroll_to_up {
+  position: sticky;
+  bottom: 3rem;
+  right: 4.2rem;
+  z-index: 1000;
+  transition: 300ms;
+  cursor: pointer;
+  svg {
+    width: 53px;
+    height: 53px;
+  }
+}

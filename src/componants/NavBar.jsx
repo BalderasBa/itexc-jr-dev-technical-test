@@ -6,7 +6,7 @@ import { ReactComponent as Calling } from "../assets/images/calling-icon.svg";
 
 function NavBar() {
   return (
-    <nav className="navbar container">
+    <nav className="navbar">
       <Logo />
       <div className="nav-menu">
         <a href="#">Home</a>

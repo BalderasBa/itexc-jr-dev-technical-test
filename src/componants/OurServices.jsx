@@ -34,27 +34,28 @@ function OurServices() {
   return (
     <section id="our-services" className="our-services">
       <div className="services-header">
-        <h1>We're here for you</h1>
+        <h1 className="text-header">We're here for you</h1>
         <p>
           Visits start at $79 for a 15 min consultation, or could be free
-          depending on your insurance. See costs for more information.
+          depending on your insurance. See
+          <a href="https://doctorondemand.com/about-us/cost/">costs</a>
+          for more information.
         </p>
       </div>
       <div className="services-content">
-        {services.map((service, i) => {
-          <div key={i}>
-            <div className="head">
+        {services.map((service, i) => (
+          <div key={i} className="one-service">
+            <div className="one-service-head">
               <h3>{service.title}</h3>
               <ServIcon />
             </div>
-            <ul>
+            <ul className="one-service-contant">
               {service.content.map((srv) => (
                 <li key={srv}>{srv}</li>
               ))}
             </ul>
-            ;
-          </div>;
-        })}
+          </div>
+        ))}
       </div>
     </section>
   );

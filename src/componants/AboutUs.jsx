@@ -44,13 +44,12 @@ function AboutUs() {
           Meet with an urgent care doctor in minutes, 24/7.Schedule a session
           with a
           <a href="https://doctorondemand.com/what-we-treat/mental-health/">
-            {" "}
-            therapist or psychiatrist{" "}
+            therapist or psychiatrist
           </a>
           this week.
         </p>
         <ul>
-          {infos.map((info,i) => (
+          {infos.map((info, i) => (
             <li key={i} className="text-normal">
               <Check /> {info}
             </li>

@@ -1,0 +1,19 @@
+@use "../global/" as *;
+
+.stats {
+  text-align: center;
+  h1 {
+    font-family: $font_poppins;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 50.76px;
+    color: $clr_txt_s;
+  }
+  p {
+    font-family: $font_roboto;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 150%;
+    color: $clr_txt_s;
+  }
+}

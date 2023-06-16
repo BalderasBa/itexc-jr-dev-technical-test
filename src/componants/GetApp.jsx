@@ -17,8 +17,8 @@ function GetApp() {
         </span>
       </div>
       <div className="apps">
-        <img src={google} alt="google play" />
         <img src={apple} alt="apple store" />
+        <img src={google} alt="google play" />
         <div>
           <p>
             4.9

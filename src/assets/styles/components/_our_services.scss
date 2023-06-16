@@ -3,12 +3,16 @@
   padding: 100px;
   padding-left: 200px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   column-gap: 130px;
   background-color: $clr_bg_grey_dark;
   .services-header {
     text-align: center;
+    width: 70%;
+    margin: 0 auto 70px;
     h1 {
+      color: $clr_blue_dark;
       margin-bottom: 1rem;
     }
     p {
@@ -17,14 +21,24 @@
       font-size: 1.125rem;
       line-height: 150%;
       color: $clr_txt_s;
+      a {
+        color: $clr_txt_s;
+        text-decoration: underline;
+        margin: 0 0.2rem;
+      }
     }
   }
   .services-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    .service {
+    @include breakpoint-down(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    gap: 80px;
+    .one-service {
       background-color: $clr_bg_white;
-      .head {
+      padding: 1.5rem 2rem;
+      .one-service-head {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -39,8 +53,10 @@
           color: $clr_orange;
         }
       }
-      ul {
-        list-style: circle;
+      ul,
+      .one-service-content {
+        list-style: disc;
+        padding: 0 1.2rem;
         li {
           font-family: $font_poppins;
           font-weight: 400;

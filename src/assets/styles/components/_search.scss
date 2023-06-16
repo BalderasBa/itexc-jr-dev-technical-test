@@ -1,20 +1,59 @@
 @use "../global/" as *;
 .search {
   display: flex;
+  padding-bottom: 100px;
   column-gap: 100px;
   background-color: $clr_bg_white;
   align-items: center;
-  img {
+  .search-img {
     width: 40%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .quality-feedback {
+      position: absolute;
+      display: flex;
+      padding: 14px 16px;
+      box-shadow: 0px 12px 32px rgba(63, 128, 240, 0.2);
+      border-radius: 1px;
+      svg {
+        box-shadow: 0px 4px 19px rgba(22, 120, 242, 0.2),
+          inset 0px 4px 4px rgba(0, 0, 0, 0.12);
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        p {
+          font-family: $font_poppins;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 1rem;
+          line-height: 150%;
+          color: $clr_txt_s;
+        }
+        .stars {
+          display: flex;
+          justify-content: space-between;
+          margin-left: 1rem;
+          svg {
+            color: #ffc107;
+          }
+        }
+      }
+    }
   }
-  > div {
+  .search-content {
     width: 40%;
     h1 {
       font-size: 2rem;
+      line-height: 40px;
       color: $clr_blue_dark;
+      margin-bottom: 1rem;
     }
     p {
-      margin-bottom: 44px;
+      margin-bottom: 2.5rem;
     }
     .button_p {
       padding: 12px 48px;
