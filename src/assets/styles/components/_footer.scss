@@ -1,10 +1,42 @@
 @use "../global/" as *;
 .footer {
   display: flex;
+  gap: 1.5rem;
   flex-wrap: wrap;
   width: 70%;
+  .help-center,
+  .other-links,
+  .apps {
+    h3 {
+      font-family: $font_poppins;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 140%;
+      color: #190134;
+      margin-bottom: 1rem;
+    }
+    a {
+      font-family: $font_poppins;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 22.4px;
+      color: #685879;
+      margin-bottom: 0.5rem;
+    }
+
+    display: flex;
+    flex-direction: column;
+  }
+  .apps {
+    > div {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
 
   .copyright {
+    margin-top: 50px;
     width: 100vw;
+    padding: 24px 0;
   }
 }

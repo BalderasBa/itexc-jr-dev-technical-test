@@ -22,16 +22,17 @@ function App() {
       <GetApp />
       <FindDoc />
       <OurServices />
-      
       <Search />
 
       <Testimonial />
       <Faq />
       <Stats />
-      {/* <Contact /> */}
-      {/* <EmtyArea /> */}
-      {/* <Footer /> */}
-      {/* <Scroll_to_up /> */}
+      <EmtyArea bgcolor="gray" />
+      <Contact />
+
+      <EmtyArea bgcolor="white" />
+      <Footer />
+      <Scroll_to_up />
     </div>
   );
 }

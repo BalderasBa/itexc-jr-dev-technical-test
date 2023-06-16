@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
-function EmtyArea() {
-  return (
-    <div className='emty-area'></div>
-  )
+function EmtyArea({bgcolor}) {
+  const classs = `emty-area-${bgcolor}`;
+  return <div className={classs}></div>;
 }
 
-export default EmtyArea
+export default EmtyArea;

@@ -73,11 +73,17 @@ select {
   font-weight: 500;
   font-size: 2.5rem;
   line-height: 150%;
-  color: #1e1e1e;
+  color: #000;
 }
 
-.emty-area {
+.emty-area-white {
   height: 423px;
+  background-color: #fff;
+}
+
+.emty-area-gray {
+  height: 200px;
+  background-color: #ebebeb;
 }
 
 .logo {
@@ -303,7 +309,7 @@ header .header-table > div p {
   font-weight: 500;
   font-size: 2rem;
   line-height: 150%;
-  color: #1e1e1e;
+  color: #000;
   margin-bottom: 1.2rem;
 }
 .about-us .about-left p {
@@ -311,7 +317,7 @@ header .header-table > div p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-  color: #1e1e1e;
+  color: #000;
   margin-bottom: 1rem;
 }
 .about-us .about-btn {
@@ -325,14 +331,14 @@ header .header-table > div p {
   font-weight: 500;
   font-size: 2rem;
   line-height: 150%;
-  color: #1e1e1e;
+  color: #000;
 }
 .about-us .about-btn p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-  color: #1e1e1e;
+  color: #000;
 }
 .about-us .about-btn p:first-of-type {
   margin-bottom: 1rem;
@@ -365,7 +371,7 @@ header .header-table > div p {
   font-weight: 500;
   font-size: 2rem;
   line-height: 150%;
-  color: #1e1e1e;
+  color: #000;
   margin-bottom: 1.2rem;
 }
 .about-us .about-right p {
@@ -373,11 +379,11 @@ header .header-table > div p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-  color: #1e1e1e;
+  color: #000;
   margin-bottom: 1rem;
 }
 .about-us .about-right p a {
-  color: #1e1e1e;
+  color: #000;
   text-decoration: underline;
   margin: 0 0.2rem;
 }
@@ -391,7 +397,7 @@ header .header-table > div p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-  color: #1e1e1e;
+  color: #000;
 }
 .about-us .about-right ul li svg {
   margin-right: 15px;
@@ -421,10 +427,10 @@ header .header-table > div p {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 150%;
-  color: #1e1e1e;
+  color: rgba(30, 30, 30, 0.4392156863);
 }
 .our-services .services-header p a {
-  color: #1e1e1e;
+  color: rgba(30, 30, 30, 0.4392156863);
   text-decoration: underline;
   margin: 0 0.2rem;
 }
@@ -452,7 +458,7 @@ header .header-table > div p {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 150%;
-  color: #1e1e1e;
+  color: #000;
 }
 .our-services .services-content .one-service .one-service-head svg {
   color: #f27219;
@@ -468,7 +474,7 @@ header .header-table > div p {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 150%;
-  color: #1e1e1e;
+  color: #000;
 }
 
 .get-app {
@@ -560,9 +566,20 @@ header .header-table > div p {
   background-color: #fff;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .search {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+}
 .search .search-img {
-  width: 40%;
+  width: 50%;
   position: relative;
+}
+@media (max-width: 767px) {
+  .search .search-img {
+    width: 80%;
+  }
 }
 .search .search-img img {
   width: 100%;
@@ -570,36 +587,46 @@ header .header-table > div p {
 }
 .search .search-img .quality-feedback {
   position: absolute;
+  bottom: 15%;
+  right: -60px;
   display: flex;
   padding: 14px 16px;
   box-shadow: 0px 12px 32px rgba(63, 128, 240, 0.2);
   border-radius: 1px;
+  background-color: #fff;
 }
-.search .search-img .quality-feedback svg {
-  box-shadow: 0px 4px 19px rgba(22, 120, 242, 0.2), inset 0px 4px 4px rgba(0, 0, 0, 0.12);
+.search .search-img .quality-feedback > svg {
+  background-color: #005ea3;
+  border-radius: 50%;
+  padding: 5px;
 }
-.search .search-img .quality-feedback div {
+.search .search-img .quality-feedback > div {
   display: flex;
   flex-direction: column;
 }
-.search .search-img .quality-feedback div p {
+.search .search-img .quality-feedback > div p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 1rem;
   line-height: 150%;
   color: #1e1e1e;
+  display: block;
 }
-.search .search-img .quality-feedback div .stars {
+.search .search-img .quality-feedback > div .stars {
   display: flex;
-  justify-content: space-between;
   margin-left: 1rem;
 }
-.search .search-img .quality-feedback div .stars svg {
+.search .search-img .quality-feedback > div .stars svg {
   color: #ffc107;
 }
 .search .search-content {
   width: 40%;
+}
+@media (max-width: 767px) {
+  .search .search-content {
+    width: 80%;
+  }
 }
 .search .search-content h1 {
   font-size: 2rem;
@@ -659,6 +686,9 @@ header .header-table > div p {
   transform: rotate(180deg);
   color: #fff;
 }
+.rc-accordion-toggle.active .accordion-title {
+  color: #fff;
+}
 
 .rc-accordion-card {
   border: 1px solid #ddd;
@@ -666,8 +696,7 @@ header .header-table > div p {
   margin-bottom: 10px;
   overflow: hidden;
 }
-
-rc-accordion-card:last-child {
+.rc-accordion-card:last-child {
   margin-bottom: 0;
 }
 
@@ -688,10 +717,6 @@ rc-accordion-card:last-child {
   font-size: 18px;
   line-height: 27px;
   margin-right: 5px;
-}
-
-.rc-accordion-toggle.active .accordion-title {
-  color: #fff;
 }
 
 .rc-accordion-icon {
@@ -724,6 +749,29 @@ rc-accordion-card:last-child {
 }
 .rc-collapse.show {
   height: auto;
+}
+
+.stats {
+  text-align: center;
+  background-color: #ebebeb;
+  padding-bottom: 61px;
+}
+.stats h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 50.76px;
+  color: #000;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+.stats p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #1e1e1e;
 }
 
 .testimonials .testimonial-header {
@@ -853,14 +901,47 @@ rc-accordion-card:last-child {
 .contact .content .infos .info span {
   font-size: 14px;
   font-weight: 400;
-  color: #000;
+  color: rgba(30, 30, 30, 0.4392156863);
 }
 
 .footer {
   display: flex;
+  gap: 1.5rem;
   flex-wrap: wrap;
   width: 70%;
 }
+.footer .help-center,
+.footer .other-links,
+.footer .apps {
+  display: flex;
+  flex-direction: column;
+}
+.footer .help-center h3,
+.footer .other-links h3,
+.footer .apps h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #190134;
+  margin-bottom: 1rem;
+}
+.footer .help-center a,
+.footer .other-links a,
+.footer .apps a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22.4px;
+  color: #685879;
+  margin-bottom: 0.5rem;
+}
+.footer .apps > div {
+  display: flex;
+  gap: 0.5rem;
+}
 .footer .copyright {
+  margin-top: 50px;
   width: 100vw;
+  padding: 24px 0;
 }/*# sourceMappingURL=style.css.map */

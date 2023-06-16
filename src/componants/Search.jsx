@@ -1,10 +1,9 @@
 import React from "react";
 
 // images:
-import { ReactComponent as ServIcon } from "../assets/images/care-search.svg";
+import { ReactComponent as ServIcon13 } from "../assets/images/care-seach.svg";
 import searchImg from "../assets/images/search-acceuil.png";
-import { ReactComponent as Star } from "../assets/images/star.svg";
-import { Link } from "react-router-dom";
+import { ReactComponent as Star } from "../assets/images/golder-star.svg";
 
 function Search() {
   return (
@@ -12,7 +11,7 @@ function Search() {
       <div className="search-img">
         <img src={searchImg} alt="acceuil" />
         <div className="quality-feedback">
-          <ServIcon />
+          <ServIcon13 />
           <div>
             <p>Quality over Quantity</p>
             <div className="stars">
@@ -32,9 +31,9 @@ function Search() {
           kesehatan dengan fungsi menyediakan pelayanan paripurna
           (komprehensif).
         </p>
-        <Link className="button_p" to="#">
+        <a className="button_p" href="#">
           Search
-        </Link>
+        </a>
       </div>
     </section>
   );

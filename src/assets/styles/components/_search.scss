@@ -5,24 +5,35 @@
   column-gap: 100px;
   background-color: $clr_bg_white;
   align-items: center;
+  @include breakpoint-down(small) {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
   .search-img {
-    width: 40%;
+    width: 50%;
     position: relative;
+    @include breakpoint-down(small) {
+      width: 80%;
+    }
     img {
       width: 100%;
       height: 100%;
     }
     .quality-feedback {
       position: absolute;
+      bottom: 15%;
+      right: -60px;
       display: flex;
       padding: 14px 16px;
       box-shadow: 0px 12px 32px rgba(63, 128, 240, 0.2);
       border-radius: 1px;
-      svg {
-        box-shadow: 0px 4px 19px rgba(22, 120, 242, 0.2),
-          inset 0px 4px 4px rgba(0, 0, 0, 0.12);
+      background-color: $clr_bg_white;
+      > svg {
+        background-color: $clr_blue_dark;
+        border-radius: 50%;
+        padding: 5px;
       }
-      div {
+      > div {
         display: flex;
         flex-direction: column;
         p {
@@ -32,10 +43,10 @@
           font-size: 1rem;
           line-height: 150%;
           color: $clr_txt_s;
+          display: block;
         }
         .stars {
           display: flex;
-          justify-content: space-between;
           margin-left: 1rem;
           svg {
             color: #ffc107;
@@ -46,6 +57,9 @@
   }
   .search-content {
     width: 40%;
+    @include breakpoint-down(small) {
+      width: 80%;
+    }
     h1 {
       font-size: 2rem;
       line-height: 40px;

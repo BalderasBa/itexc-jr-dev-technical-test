@@ -8,22 +8,24 @@ function Footer() {
   return (
     <section className="footer container section">
       <div className="help-center">
-        <h3>help center</h3>
+        <h3>Help center</h3>
         <a href="#">Frequently Asked Questions</a>
         <a href="#">Driver Training Platform</a>
         <a href="#">Support</a>
       </div>
       <div className="other-links">
-        <h3>other links</h3>
+        <h3>Healthy 24</h3>
         <a href="#">C.G.U</a>
         <a href="#">Privacy</a>
         <a href="#">Press</a>
         <a href="#">Partnership</a>
       </div>
       <div className="apps">
-        <p>Download the application</p>
-        <img src={apple} alt="apple store" />
-        <img src={google} alt="google play" />
+        <h3>Download the application</h3>
+        <div>
+          <img src={apple} alt="apple store" />
+          <img src={google} alt="google play" />
+        </div>
       </div>
       <div className="copyright">
         <p>Healthy 2023 ©</p>

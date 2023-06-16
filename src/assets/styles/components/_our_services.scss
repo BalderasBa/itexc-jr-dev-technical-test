@@ -20,9 +20,9 @@
       font-weight: 400;
       font-size: 1.125rem;
       line-height: 150%;
-      color: $clr_txt_s;
+      color: $clr_txt_s_t;
       a {
-        color: $clr_txt_s;
+        color: $clr_txt_s_t;
         text-decoration: underline;
         margin: 0 0.2rem;
       }
@@ -47,7 +47,7 @@
           font-weight: 500;
           font-size: 1.25rem;
           line-height: 150%;
-          color: $clr_txt_s;
+          color: $clr_txt_p;
         }
         svg {
           color: $clr_orange;
@@ -62,7 +62,7 @@
           font-weight: 400;
           font-size: 1.125rem;
           line-height: 150%;
-          color: $clr_txt_s;
+          color: $clr_txt_p;
         }
       }
     }

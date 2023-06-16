@@ -67,8 +67,13 @@ select {
   font-weight: 500;
   font-size: 2.5rem;
   line-height: 150%;
-  color: $clr_txt_s;
+  color: $clr_txt_p;
 }
-.emty-area {
+.emty-area-white {
   height: 423px;
+  background-color: $clr_bg_white;
+}
+.emty-area-gray {
+  height: 200px;
+  background-color: $clr_bg_grey;
 }

@@ -13,7 +13,7 @@
       font-weight: 500;
       font-size: 2rem;
       line-height: 150%;
-      color: $clr_txt_s;
+      color: $clr_txt_p;
       margin-bottom: 1.2rem;
     }
     p {
@@ -21,7 +21,7 @@
       font-weight: 400;
       font-size: 1rem;
       line-height: 150%;
-      color: $clr_txt_s;
+      color: $clr_txt_p;
       margin-bottom: 1rem;
     }
   }
@@ -35,14 +35,14 @@
       font-weight: 500;
       font-size: 2rem;
       line-height: 150%;
-      color: $clr_txt_s;
+      color: $clr_txt_p;
     }
     p {
       font-family: $font_poppins;
       font-weight: 400;
       font-size: 1rem;
       line-height: 150%;
-      color: $clr_txt_s;
+      color: $clr_txt_p;
       &:first-of-type {
         margin-bottom: 1rem;
       }
@@ -76,7 +76,7 @@
       font-weight: 500;
       font-size: 2rem;
       line-height: 150%;
-      color: $clr_txt_s;
+      color: $clr_txt_p;
       margin-bottom: 1.2rem;
     }
     p {
@@ -84,10 +84,10 @@
       font-weight: 400;
       font-size: 1rem;
       line-height: 150%;
-      color: $clr_txt_s;
+      color: $clr_txt_p;
       margin-bottom: 1rem;
       a {
-        color: $clr_txt_s;
+        color: $clr_txt_p;
         text-decoration: underline;
         margin: 0 0.2rem;
       }
@@ -101,7 +101,7 @@
         font-weight: 400;
         font-size: 1rem;
         line-height: 150%;
-        color: $clr_txt_s;
+        color: $clr_txt_p;
         svg {
           margin-right: 15px;
         }

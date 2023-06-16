@@ -5,39 +5,33 @@ import { ReactComponent as Adress } from "../assets/images/location-icon.svg";
 import { ReactComponent as Phone } from "../assets/images/phone-icon.svg";
 
 function Contact() {
-  const [loading, setLoading] = useState(false);
+  const [formContent, setFormContent] = useState({});
 
+  function validateEmail(input) {
+    var validRegex =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (input.value.match(validRegex)) {
+      alert("Valid email address!");
+      return true;
+    } else {
+      alert("Invalid email address!");
+      return false;
+    }
+  }
   function handleSubmit(e) {
     e.preventDefault();
-    //   // some validations:
-    //   // if (!companiesDTO.userDto.email || !companiesDTO.userDto.password) {
-    //   //   toast.error("Email and password is required");
-    //   //   return;
-    //   // }
-    //   // if (companiesDTO.userDto.password.length < 8) {
-    //   //   toast.error("Password must be at least 8 characters long");
-    //   //   return;
-    //   // }
-    //   // if (passwordShown !== passwordShownC) {
-    //   //   toast.error("Password and its confirmation must be the same");
-    //   //   return;
-    //   // }
-    //   fetch("link_here", { method: "POST" })
-    //     .then((response) => response.json())
-    //     .then(() => {
-    //       toast.success(
-    //         `Email is sent to ${companiesDTO.userDto.email}. Click the link to complete your registration.`
-    //       );
-    //       window.localStorage.setItem(
-    //         "emailForRegistration",
-    //         companiesDTO.userDto.email
-    //       );
-    //     })
-    //     .catch((error) => {
-    //       console.error(error);
-    //       toast.error(error.message);
-    //       setLoading(false);
-    //     });
+    // some validations:
+    if (!formContent.email || !formContent.message) {
+      alert("Email and message are required");
+      return;
+    }
+    validateEmail(formContent.email);
+
+    fetch("link_here", { method: "POST" })
+      .then((response) => response.json())
+      .catch((error) => {
+        alert(error);
+      });
   }
   return (
     <section className="contact container section" id="contact-us">
@@ -64,7 +58,7 @@ function Contact() {
             className="main-input"
             type="email"
             id="email"
-            name="mail"
+            name="email"
             placeholder="Your Email"
           />
           <label htmlFor="message" className="text-normal">
@@ -75,7 +69,6 @@ function Contact() {
             name="message"
             id="message"
             placeholder="Your Message"
-            res
           ></textarea>
           <input type="submit" value="Send Message" className="button_p" />
         </form>
