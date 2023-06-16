@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import stethoscope from "../assets/images/faq-doc-with-stethoscope.jpg";
 import { ReactComponent as Chat } from "../assets/images/chat-icon.svg";
 import { ReactComponent as Plus } from "../assets/images/plus-icon.svg";
+import { ReactComponent as Doc } from "../assets/images/doc-svg.svg";
 
 const faqs = [
   {
@@ -67,44 +68,21 @@ function Faq() {
       setActive(index);
     }
   };
-
-  // return (
-  //   <>
-  //     <div className="container-fluid mt-5 mb-5">
-  //       <div className="row justify-content-center">
-  //         <div className="col-md-8 mt-2">
-  //           <div className="card">
-  //             <div className="card-body">
-  //               <h4 className="form-heading mb-4 mt-3">React Accordion</h4>
-  //               {faqs.map((faq, index) => {
-  //                 return (
-  //                   <AccordionItem
-  //                     key={index}
-  //                     active={active}
-  //                     handleToggle={handleToggle}
-  //                     faq={faq}
-  //                   />
-  //                 );
-  //               })}
-  //             </div>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </>
-  // );
   return (
     <section className="faq container section">
       <div className="faq-accordion">
-        <h1>
-          <Chat />
-          faq
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
-        </p>
+        <div className="header">
+          <h1>
+            <Chat />
+            faq
+          </h1>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+            libero vitae erat."
+          </p>
+        </div>
         <div className="accordion">
           <div className="row justify-content-center">
             <div className="col-md-8 mt-2">
@@ -128,12 +106,13 @@ function Faq() {
       </div>
       <div className="faq-contact">
         <img src={stethoscope} alt="doctor hand & stethoscope" />
-        <div>
-          <p>Still have a question?</p>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <div className="faq-contact-content">
+          <h3>Still have a question?</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <a href="#" className="button_s">
             Contact Us
           </a>
+          <Doc />
         </div>
       </div>
     </section>

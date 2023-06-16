@@ -35,37 +35,37 @@ function Contact() {
   }
   return (
     <section className="contact container section" id="contact-us">
-      <div className="main-heading" onSubmit={handleSubmit}>
-        <h2>Contact Us</h2>
+      <div className="contact-heading">
+        <h1>Contact Us</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
       <div className="content">
-        <form action="POST">
-          <label htmlFor="name" className="text-normal">
+        <form action="POST" onSubmit={handleSubmit}>
+          <label htmlFor="name" className="label">
             Full Name
           </label>
           <input
-            className="main-input"
+            className="input"
             type="text"
             id="name"
             name="name"
             placeholder="Your Name"
           />
-          <label htmlFor="email" className="text-normal">
+          <label htmlFor="email" className="label">
             Email
           </label>
           <input
-            className="main-input"
+            className="input"
             type="email"
             id="email"
             name="email"
             placeholder="Your Email"
           />
-          <label htmlFor="message" className="text-normal">
+          <label htmlFor="message" className="label">
             Message
           </label>
           <textarea
-            className="main-input"
+            className="input"
             name="message"
             id="message"
             placeholder="Your Message"
@@ -73,7 +73,7 @@ function Contact() {
           <input type="submit" value="Send Message" className="button_p" />
         </form>
         <div className="infos">
-          <h4>Availble also on :</h4>
+          <h3>Availble also on :</h3>
           <div className="info">
             <Mail />
             <div>

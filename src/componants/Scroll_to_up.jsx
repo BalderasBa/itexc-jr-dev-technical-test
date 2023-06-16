@@ -5,9 +5,9 @@ import { ReactComponent as ArrowUp } from "../assets/images/arrow-up.svg";
 
 function Scroll_to_up() {
   return (
-    <div className="scroll_to_up" onClick={() => window.scroll(0, 0)}>
+    <span className="scroll_to_up" onClick={() => window.scroll(0, 0)}>
       <ArrowUp />
-    </div>
+    </span>
   );
 }
 

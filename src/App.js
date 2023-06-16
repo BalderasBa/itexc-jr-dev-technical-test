@@ -23,13 +23,11 @@ function App() {
       <FindDoc />
       <OurServices />
       <Search />
-
       <Testimonial />
       <Faq />
       <Stats />
       <EmtyArea bgcolor="gray" />
       <Contact />
-
       <EmtyArea bgcolor="white" />
       <Footer />
       <Scroll_to_up />

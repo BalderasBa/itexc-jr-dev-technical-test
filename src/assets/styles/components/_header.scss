@@ -8,6 +8,12 @@ header {
     display: flex;
     flex-direction: column;
     width: 50%;
+    @include breakpoint-down(medium) {
+      width: 80%;
+    }
+    @include breakpoint-down(small) {
+      width: 90%;
+    }
     h1 {
       font-family: $font_poppins;
       font-weight: 400;
@@ -30,6 +36,14 @@ header {
   .header-table {
     display: flex;
     margin: 140px 115px 0;
+    @include breakpoint-down(medium) {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      margin: 80px 50px 0;
+    }
+    @include breakpoint-down(small) {
+      margin: 40px 30px 0;
+    }
     > div {
       display: flex;
       flex-direction: column;
@@ -39,6 +53,12 @@ header {
       transition: 300ms ease-in;
       text-align: center;
       padding: 34px 48px;
+      @include breakpoint-down(medium) {
+        padding: 20px 30px;
+      }
+      @include breakpoint-down(small) {
+        padding: 14px 18px;
+      }
 
       &:hover {
         background-color: $clr_blue_light;

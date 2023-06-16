@@ -1,64 +1,88 @@
 @use "../global/" as *;
 
 .testimonials {
-  .testimonial-header {
-    text-align: center;
-    color: $clr_orange;
-    margin-bottom: 13px;
-    h1 {
-      position: relative;
-      margin: 20px;
-      &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        width: 70%;
-        height: 3px;
-        background-color: $clr_orange;
-      }
-    }
-    .stars {
+  .testimonials-container {
+    padding: 42px;
+    .testimonial-header {
       display: flex;
-      justify-content: space-between;
-      margin-left: 1rem;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 13px;
+      p {
+        color: $clr_orange;
+        font-weight: 600;
+        position: relative;
+        padding: 13px;
+        &::after {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 120%;
+          height: 3px;
+          background-color: $clr_orange_t;
+        }
+      }
+      h1 {
+        position: relative;
+        margin: 20px;
+      }
+      .stars {
+        display: flex;
+        gap: 10px;
+        margin: 0 auto;
+      }
+    }
+    .testimonial-content {
+      position: relative;
+      width: 100%;
+      padding: 0 55px;
       svg {
-        color: #fcc74d;
+        position: absolute;
+        top: 20%;
+        cursor: pointer;
+        z-index: 10;
+        &.previous-btn {
+          left: 30px;
+        }
+        &.next-btn {
+          right: 30px;
+        }
       }
-    }
-  }
-  .testimonial-comtent {
-    svg {
-      cursor: pointer;
-      padding: 10px;
-      transition: 300ms;
-      border-radius: 50%;
-      &:active,
-      &:focus {
-        background-color: $clr_blue_light;
-      }
-    }
-    > div {
-      text-align: center;
-      .testi-desc {
-        font-family: $font_poppins;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 150%;
-        color: $clr_txt_s;
-      }
-      .testi-author {
-        font-family: $font_poppins;
-        font-weight: 500;
-        font-size: 2.5rem;
-        line-height: 150%;
-        color: $clr_txt_s;
-      }
-      .testi-role {
-        font-family: $font_poppins;
-        font-weight: 500;
-        font-size: 2.5rem;
-        line-height: 150%;
-        color: $clr_txt_s;
+      > div {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        .testi-desc {
+          padding: 0 90px;
+          font-family: $font_poppins;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 150%;
+          color: $clr_txt_s;
+        }
+        .testi-avatar {
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          margin: 24px auto 32px;
+          border: 1px solid $clr_orange;
+        }
+        .testi-author {
+          font-family: $font_poppins;
+          font-weight: 600;
+          font-size: 1rem;
+          line-height: 150%;
+          color: $clr_txt_s;
+        }
+        .testi-role {
+          font-family: $font_poppins;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 150%;
+          color: $clr_txt_s_t;
+        }
       }
     }
   }

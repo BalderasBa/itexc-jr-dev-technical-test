@@ -1,9 +1,9 @@
 @use "../global/" as *;
 .footer {
   display: flex;
-  gap: 1.5rem;
+  gap: 3rem;
   flex-wrap: wrap;
-  width: 70%;
+  // width: 70%;
   .help-center,
   .other-links,
   .apps {
@@ -28,6 +28,7 @@
     flex-direction: column;
   }
   .apps {
+    margin-left: 188px;
     > div {
       display: flex;
       gap: 0.5rem;
